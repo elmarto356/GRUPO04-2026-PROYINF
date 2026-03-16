@@ -1,12 +1,14 @@
-# Grupo 20
+# Grupo 4
 
-Este es el repositorio del *Grupo 20*, cuyos integrantes son:
+Este es el repositorio del *Grupo 4*, cuyos integrantes son:
 
 * Veronica Torres - 202373503-5
 * Isidora Villegas - 202203026-7
 * Alfonso Pavez - 202373613-9
 * Martin Fonseca - 202373613-9
-* **Tutor**: CAMILO JAVIER GONZALEZ ARAYA
+* Benjamín Retamal - 202173606-9
+* **Tutor**: ALEX FERNANDO URRUTIA ESCOBAR
+
 
 ## Wiki
 
