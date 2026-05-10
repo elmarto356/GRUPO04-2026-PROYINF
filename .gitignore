@@ -15,3 +15,5 @@ dist/
 # Ignorar archivos de entorno (¡MUY IMPORTANTE!)
 .env
 .env.local
+
+/tests/__pycache__

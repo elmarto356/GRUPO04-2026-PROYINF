@@ -51,6 +51,15 @@ services:
     volumes:
       - pgadmin_data:/var/lib/pgadmin
 
+  tests:
+    build:
+      context: ./tests
+      dockerfile: Dockerfile
+    depends_on:
+      - api
+    volumes:
+      - ./tests:/tests
+
 volumes:
   postgres_data:
   pgadmin_data:
