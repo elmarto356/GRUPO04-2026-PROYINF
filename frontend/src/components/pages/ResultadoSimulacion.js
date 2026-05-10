@@ -30,11 +30,13 @@ export default function ResultadoSimulacion() {
   const qs = useMemo(() => new URLSearchParams(search), [search]);
   const montoQS = qs.get("monto");
   const tiempoQS = qs.get("cuotas");
+  const sueldoQS = qs.get("sueldo");
 
   useEffect(() => {
     if (!state && montoQS && tiempoQS) {
       const amount = Number(String(montoQS).replace(/\./g, ""));
       const months = daysToMonths(tiempoQS);
+      const income = Number(String(sueldoQS || "0").replace(/\./g,""));
       if (!Number.isFinite(amount) || amount <= 0) {
         setErr("Monto inválido.");
         return;
@@ -44,7 +46,7 @@ export default function ResultadoSimulacion() {
       fetch(`${API_BASE}/api/simulations`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ amount, months }),
+        body: JSON.stringify({ amount, months, income }),
       })
         .then((r) => {
           if (!r.ok) throw new Error("No se pudo obtener la simulación.");
@@ -56,13 +58,14 @@ export default function ResultadoSimulacion() {
             input: { amount, months },
             rate: json.rate,
             result: json.result,
+            analisisRiesgo: json.analisisRiesgo,
             notes: json.notes || [],
           });
         })
         .catch((e) => setErr(e.message))
         .finally(() => setLoading(false));
     }
-  }, [state, montoQS, tiempoQS]);
+  }, [state, montoQS, tiempoQS, sueldoQS]);
 
   //envia solicitud a la api
 const enviarSolicitud = async () => {
@@ -70,7 +73,8 @@ const enviarSolicitud = async () => {
     const datosEnvio = {
       userId: 1, 
       amount: data.input.amount,
-      months: data.input.months
+      months: data.input.months,
+      income: data.input.income //importante para la hu 4 **RECORDAR**
     };
 
     try {
@@ -111,7 +115,15 @@ const enviarSolicitud = async () => {
 
         {data?.ok && (
           <>
+            {data.analisisRiesgo && (
+              <div className={`alert ${data.analisisRiesgo.esOptimo ? 'alert-success' : 'alert-danger'} text-center fw-bold shadow-sm`}>
+                {data.analisisRiesgo.esOptimo ? "✅ " : "⚠️ "}
+                {data.analisisRiesgo.mensaje}
+              </div>
+            )}
+
             <div className="mb-3">
+              <strong>Sueldo Reportado:</strong> ${fmtCLP(data.input.income || 0)} <br /> 
               <strong>Monto:</strong> ${fmtCLP(data.input.amount)}<br />
               <strong>Cuotas:</strong> {data.input.months}
             </div>

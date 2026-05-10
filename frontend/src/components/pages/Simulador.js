@@ -6,6 +6,7 @@ const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:8080";
 function Simulador() {
   const [monto, setMonto] = useState("");
   const [cuotas, setCuotas] = useState(""); // en meses
+  const [sueldo, setSueldo] = useState("") // estado para el sueldo liquido del usuario
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState("");
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ function Simulador() {
   };
 
   const handleMontoChange = (e) => setMonto(formatMonto(e.target.value));
+  const handleSueldoChange = (e) => setSueldo(formatMonto(e.target.value));
   const parseAmount = (str) => Number((str || "0").replace(/\./g, ""));
 
   const handleSubmit = async (e) => {
@@ -26,16 +28,19 @@ function Simulador() {
     try {
       const amount = parseAmount(monto);
       const months = Number(cuotas);
+      const income = parseAmount(sueldo); 
 
       if (!Number.isFinite(amount) || amount <= 0)
         throw new Error("Ingrese un monto válido.");
       if (!Number.isFinite(months) || months < 6 || months > 60)
         throw new Error("El número de cuotas debe estar entre 6 y 60.");
+      if (income <= 0) 
+        throw new Error("Ingrese un sueldo valido")
 
       const res = await fetch("/api/simulations", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ amount, months }),
+        body: JSON.stringify({ amount, months, income}),
       });
 
       const raw = await res.text();
@@ -52,9 +57,10 @@ function Simulador() {
       navigate("/resultado-simulacion", {
         state: {
           ok: data.ok,
-          input: { amount, months },
+          input: { amount, months, income },
           rate: data.rate,
           result: data.result,
+          analisisRiesgo: data.analisisRiesgo,
           notes: data.notes || [],
         },
         replace: true,
@@ -66,7 +72,7 @@ function Simulador() {
     }
   };
 
-  const canSubmit = Boolean(monto && cuotas);
+  const canSubmit = Boolean(monto && cuotas && sueldo);
 
   return (
     //fondo
@@ -108,6 +114,22 @@ function Simulador() {
         Solicítalo 100% online y recibe respuesta en minutos
         </h5>
         <form onSubmit={handleSubmit}>
+          {/*Sueldo Liquido*/}
+          <div className="mb-3">
+            <label htmlFor="sueldo" classname="form-label">Sueldo Liquido Meensual (en CLP)</label>
+            <input 
+              type= "text"
+              className= "form-control "
+              id="sueldo"
+              placeholder="Ej: 800 000"
+              value={sueldo}
+              onChange={handleSueldoChange}
+              inputMode="numeric"
+              required
+            />
+              
+
+          </div>
           {/* Monto */}
           <div className="mb-3">
             <label htmlFor="monto" className="form-label">Monto (CLP)</label>
@@ -140,7 +162,7 @@ function Simulador() {
               onChange={(e) => setCuotas(e.target.value)}
               required
             />
-            <div className="form-text">Entre 6 y 60 meses.</div>
+            <div className="form-text">Entre 6  y 60 meses.</div>
           </div>
 
           <button
