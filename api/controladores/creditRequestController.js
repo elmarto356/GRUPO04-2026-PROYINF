@@ -4,19 +4,20 @@ const CreditRequestController = {
   // Crear una nueva solicitud de crédito
   async createRequest(req, res) {
     try {
-      const { userId, amount, months } = req.body;
+      const { userId, amount, months, income } = req.body;
 
       // Validar campos requeridos
-      if (!userId || !amount || !months) {
+      if (!userId || !amount || !months || !income) {
         return res.status(400).json({
           ok: false,
-          error: 'userId, amount y months son requeridos'
+          error: 'userId, amount, months e income son requeridos'
         });
       }
 
       // Validar tipos de datos
       const amountNum = Number(amount);
       const monthsNum = Number(months);
+      const incomeNum = Number(income);
 
       if (!Number.isFinite(amountNum) || !Number.isInteger(monthsNum)) {
         return res.status(400).json({
@@ -39,6 +40,15 @@ const CreditRequestController = {
           error: 'Las cuotas deben estar entre 6 y 60 meses'
         });
       }
+
+      if (incomeNUm <= 0){
+        return res.status(400).json({
+          ok:false,
+          error: 'El sueldo debe ser mayor a 0'
+        });
+      }
+
+      
 
       // Crear la solicitud usando el modelo
       const creditRequest = await CreditRequestModel.create(userId, amountNum, monthsNum);
