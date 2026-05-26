@@ -150,7 +150,6 @@ const enviarSolicitud = async () => {
         <div className="d-flex gap-2 mt-3">
           <Link className="btn btn-secondary w-50" to="/simulador-credito">Nueva simulación</Link>
           <Link className="btn btn-primary w-50" to="/">Inicio</Link>
-          <Link className="btn btn-primary w-50" to="/prehistorial-simulaciones">Guardar Simulación</Link>
           <button 
             className="btn btn-success w-50 flex-grow-1" 
             onClick={() => setMostrarModal(true)}

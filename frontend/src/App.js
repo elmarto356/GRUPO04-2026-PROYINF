@@ -5,6 +5,7 @@ import Register from "./components/pages/Register.js";
 import Navbar from "./components/things/navbar.js" 
 import Simulador from "./components/pages/Simulador";
 import ResultadoSimulacion from "./components/pages/ResultadoSimulacion";
+import ResultadoSimulacionInt from "./components/pages/ResultadoSimulacion interno.js";
 import HistorialSimulaciones from "./components/pages/HistorialSimulaciones";
 import PreHistorialSimulaciones from "./components/pages/PreHistorialSimulaciones";
 import PaginaMenu from "./components/pages/PaginaMenu.js";
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/inicio-sesion" element={<Login onLoginSuccess={handleLoginSuccess}/>} />
                 <Route path="/simulador-credito" element={<Simulador />} />
                 <Route path="/resultado-simulacion" element={<ResultadoSimulacion />} />
+                <Route path="/resultado-simulacion-interno" element={<ResultadoSimulacionInt />} />
                 <Route path="/historial-simulaciones" element={<HistorialSimulaciones isLoggedIn={isLoggedIn}/>} />
                 <Route path="/prehistorial-simulaciones" element={<PreHistorialSimulaciones />} />
                 <Route path="/pagina-menu" element={<PaginaMenu />} />

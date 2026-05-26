@@ -14,7 +14,7 @@ function simulateStandard({ amount, months, income }) {
     analisisRiesgo = {
       esOptimo,
       mensaje: esOptimo
-        ? "Prestamo optimo segun capacidad de pago"
+        ? "Préstamo óptimo según capacidad de pago"
         : "Alerta: carga financiera riesgosa"
     }
   }

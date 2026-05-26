@@ -3,9 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:8080";
 
-function Simulador() {
+function SimuladorInt() {
   const [monto, setMonto] = useState("");
   const [cuotas, setCuotas] = useState(""); // en meses
+  const [sueldo, setSueldo] = useState("") // estado para el sueldo liquido del usuario
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState("");
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ function Simulador() {
   };
 
   const handleMontoChange = (e) => setMonto(formatMonto(e.target.value));
+  const handleSueldoChange = (e) => setSueldo(formatMonto(e.target.value));
   const parseAmount = (str) => Number((str || "0").replace(/\./g, ""));
 
   const handleSubmit = async (e) => {
@@ -26,16 +28,19 @@ function Simulador() {
     try {
       const amount = parseAmount(monto);
       const months = Number(cuotas);
+      const income = parseAmount(sueldo); 
 
       if (!Number.isFinite(amount) || amount <= 0)
         throw new Error("Ingrese un monto válido.");
       if (!Number.isFinite(months) || months < 6 || months > 60)
         throw new Error("El número de cuotas debe estar entre 6 y 60.");
+      if (income <= 0) 
+        throw new Error("Ingrese un sueldo valido")
 
       const res = await fetch("/api/simulations", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ amount, months }),
+        body: JSON.stringify({ amount, months, income}),
       });
 
       const raw = await res.text();
@@ -49,12 +54,13 @@ function Simulador() {
       const data = raw ? JSON.parse(raw) : null;
       if (!data?.ok) throw new Error("La API no devolvió 'ok'.");
 
-      navigate("/resultado-simulacion", {
+      navigate("/resultado-simulacion-interno", {
         state: {
           ok: data.ok,
-          input: { amount, months },
+          input: { amount, months, income },
           rate: data.rate,
           result: data.result,
+          analisisRiesgo: data.analisisRiesgo,
           notes: data.notes || [],
         },
         replace: true,
@@ -66,48 +72,54 @@ function Simulador() {
     }
   };
 
-  const canSubmit = Boolean(monto && cuotas);
+  const canSubmit = Boolean(monto && cuotas && sueldo);
 
   return (
     //fondo
     <div className="d-flex justify-content-center align-items-center vh-100 bs-body-bg"
-      style={{backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundColor: "#d9dfe7ff",
-            }}>
-
-      <div className="d-flex align-items-center p-4"   //imagen fondo
-        style={{ 
-          backgroundImage: "url('/images/fondoprueba.png')",  //agregar imagen motivante
-          transform: "translateX(700px)",
-          background: "#a4c9f9ff", 
-          borderRadius: "12px", 
-          boxShadow: "0 6px 20px rgba(0,0,0,0.1)", 
-          width: "45%", 
-          height:"100%"
-      }}
-    ></div>
-
-      <div className="card p-5 shadow"    //formulario credito
-        style={{
-          width: "550px",
-          transform: "translateX(-900px)",
-          borderRadius: "12px",
-          boxShadow: "0 10px 20px rgba(0,0,0,0.1)"
+      style={{
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundColor: "#d9dfe7ff",
       }}>
 
-        <h3 className="text-center mb-4" 
-          style={{color:'rgba(42, 54, 159, 1)'}}
-          >
-          Crédito de Consumo Digital
-          </h3>
-
-        <h5 className="text-center mb-2" 
-        style={{ fontWeight: "normal" }}
+      <div
+        className="card p-5 shadow mx-3"
+        //formulario credito
+        style={{
+          width: "550px",
+          borderRadius: "12px",
+          boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
+          maxWidth: "90%",
+        }}
+      >
+        <h3
+          className="text-center mb-4"
+          style={{ color: "rgba(42, 54, 159, 1)" }}
         >
-        Solicítalo 100% online y recibe respuesta en minutos
+          Crédito de Consumo Digital
+        </h3>
+
+        <h5 className="text-center mb-2" style={{ fontWeight: "normal" }}>
+          Solicítalo 100% online y recibe respuesta en minutos
         </h5>
         <form onSubmit={handleSubmit}>
+          {/*Sueldo Liquido*/}
+          <div className="mb-3">
+            <label htmlFor="sueldo" classname="form-label">Sueldo Líquido Mensual (en CLP)</label>
+            <input 
+              type= "text"
+              className= "form-control "
+              id="sueldo"
+              placeholder="Ej: 800 000"
+              value={sueldo}
+              onChange={handleSueldoChange}
+              inputMode="numeric"
+              required
+            />
+              
+
+          </div>
           {/* Monto */}
           <div className="mb-3">
             <label htmlFor="monto" className="form-label">Monto (CLP)</label>
@@ -153,13 +165,9 @@ function Simulador() {
         </form>
 
         {err && <div className="alert alert-danger mt-3 text-center">{err}</div>}
-
-        <p className="text-center mt-3">
-          ¿No tienes cuenta? <a href="/registro">Regístrate</a>
-        </p>
       </div>
     </div>
   );
 }
 
-export default Simulador;
+export default SimuladorInt;

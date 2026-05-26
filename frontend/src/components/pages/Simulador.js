@@ -116,7 +116,7 @@ function Simulador() {
         <form onSubmit={handleSubmit}>
           {/*Sueldo Liquido*/}
           <div className="mb-3">
-            <label htmlFor="sueldo" classname="form-label">Sueldo Liquido Meensual (en CLP)</label>
+            <label htmlFor="sueldo" classname="form-label">Sueldo Líquido Mensual (en CLP)</label>
             <input 
               type= "text"
               className= "form-control "
