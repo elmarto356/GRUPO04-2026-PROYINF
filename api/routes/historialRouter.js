@@ -3,9 +3,33 @@ const express = require("express");
 const router = express.Router();
 const { pool } = require("../db");
 
+function obtenerUserId(req) {
+  const userId =
+    req.user?.id ||
+    req.session?.user?.id ||
+    req.body?.userId ||
+    req.query?.userId ||
+    req.headers["x-user-id"];
+
+  const userIdNum = Number(userId);
+
+  if (!Number.isInteger(userIdNum) || userIdNum <= 0) {
+    return null;
+  }
+
+  return userIdNum;
+}
+
 router.get("/historial-simulaciones", async (req, res) => {
   try {
-    const userId = 2; // ID de usuario fijo para el ejemplo
+    const userId = obtenerUserId(req);
+
+    if (!userId) {
+      return res.status(401).json({
+        message: "No se pudo identificar al usuario.",
+        ayuda: "Envía userId por query, sesión, token o header x-user-id.",
+      });
+    }
 
     const { rows } = await pool.query(
       `SELECT id,
@@ -25,16 +49,26 @@ router.get("/historial-simulaciones", async (req, res) => {
     res.json({ simulations: rows });
   } catch (err) {
     console.error("Error al obtener historial:", err);
+
     res.status(500).json({
       message: "Error al obtener el historial de simulaciones",
       error: err.message,
+      detail: err.detail,
+      code: err.code,
     });
   }
 });
 
 router.post("/historial-simulaciones", async (req, res) => {
   try {
-    const userId = 2; // Debe coincidir con el GET para que aparezca en el historial
+    const userId = obtenerUserId(req);
+
+    if (!userId) {
+      return res.status(401).json({
+        message: "No se pudo identificar al usuario.",
+        ayuda: "Envía userId en el body, sesión, token o header x-user-id.",
+      });
+    }
 
     const {
       amount,

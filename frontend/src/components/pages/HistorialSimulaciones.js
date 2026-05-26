@@ -28,18 +28,23 @@ function HistorialSimulaciones({ isLoggedIn }) {
       setErr("");
 
       try {
-        const res = await fetch("/api/historial-simulaciones");
-        const raw = await res.text(); // leemos el cuerpo como texto
+        const userId = localStorage.getItem("userId");
+
+        if (!userId) {
+          throw new Error("No se pudo identificar al usuario logueado.");
+        }
+
+        const res = await fetch(`/api/historial-simulaciones?userId=${userId}`);
+        const raw = await res.text();
 
         let data = null;
         try {
-          data = raw ? JSON.parse(raw) : null; // intentamos parsear JSON
+          data = raw ? JSON.parse(raw) : null;
         } catch {
           // si no es JSON, data queda null
         }
 
         if (!res.ok) {
-          // si el backend mandó { message: "algo" }, lo usamos
           const msgBackend = data?.message;
           const msgHttp = `HTTP ${res.status} ${res.statusText}`;
           throw new Error(msgBackend ? `${msgHttp} - ${msgBackend}` : msgHttp);

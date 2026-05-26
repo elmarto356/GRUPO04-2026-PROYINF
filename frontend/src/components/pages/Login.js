@@ -22,6 +22,9 @@ function Login({onLoginSuccess}) {
       const data = await response.json();
 
       if (response.ok) {
+        console.log("RESPUESTA LOGIN:", data);
+        localStorage.setItem("userId", data.data.id);
+        localStorage.setItem("user", JSON.stringify(data.data));
         onLoginSuccess(); 
         alert("Inicio de sesión exitoso");
         navigate("/pagina-menu");

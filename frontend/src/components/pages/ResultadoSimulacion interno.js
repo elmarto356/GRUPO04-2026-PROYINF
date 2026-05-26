@@ -87,7 +87,18 @@ export default function ResultadoSimulacionInt() {
     setGuardandoSimulacion(true);
     setErrorGuardar("");
 
+    const usuario = JSON.parse(localStorage.getItem("user") || "{}");
+    const userId = usuario.id || localStorage.getItem("userId");
+
+    if (!userId) {
+      setErrorGuardar("No se pudo identificar al usuario logueado.");
+      setGuardandoSimulacion(false);
+      return;
+    }
+
     const datosGuardar = {
+      userId: Number(userId),
+
       amount: data.input.amount,
       months: data.input.months,
       income: data.input.income,
@@ -118,6 +129,7 @@ export default function ResultadoSimulacionInt() {
         throw new Error(
           respuestaData?.message ||
             respuestaData?.error ||
+            raw ||
             "No se pudo guardar la simulación."
         );
       }
