@@ -4,7 +4,7 @@ Este es el repositorio del *Grupo 4*; esta vez siendo la continuación del proye
 
 * Veronica Torres - 202373503-5
 * Isidora Villegas - 202203026-7
-* Alfonso Pavez - 202373613-9
+* Alfonso Pavez - 202373604-k
 * Martin Fonseca - 202373613-9
 * Benjamín Retamal - 202173606-9
 * **Tutor**: ALEX FERNANDO URRUTIA ESCOBAR
