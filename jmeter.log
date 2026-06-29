@@ -1,0 +1,277 @@
+2026-06-28 20:59:35,361 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-06-28 20:59:35,389 INFO o.a.j.JMeter: Loading user properties from: C:\Users\mfons\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\user.properties
+2026-06-28 20:59:35,390 INFO o.a.j.JMeter: Loading system properties from: C:\Users\mfons\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\system.properties
+2026-06-28 20:59:35,401 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-06-28 20:59:35,401 INFO o.a.j.JMeter: Version 5.6.3
+2026-06-28 20:59:35,401 INFO o.a.j.JMeter: java.version=21.0.11
+2026-06-28 20:59:35,401 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-06-28 20:59:35,402 INFO o.a.j.JMeter: os.name=Windows 11
+2026-06-28 20:59:35,402 INFO o.a.j.JMeter: os.arch=amd64
+2026-06-28 20:59:35,402 INFO o.a.j.JMeter: os.version=10.0
+2026-06-28 20:59:35,402 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-06-28 20:59:35,402 INFO o.a.j.JMeter: java.awt.headless=true
+2026-06-28 20:59:35,402 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-06-28 20:59:35,402 INFO o.a.j.JMeter: Available Processors =8
+2026-06-28 20:59:35,414 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-06-28 20:59:35,414 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-06-28 20:59:35,415 INFO o.a.j.JMeter: JMeterHome=C:\Users\mfons\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3
+2026-06-28 20:59:35,415 INFO o.a.j.JMeter: user.dir  =C:\Users\mfons\GRUPO04-2026-PROYINF
+2026-06-28 20:59:35,415 INFO o.a.j.JMeter: PWD       =C:\Users\mfons\GRUPO04-2026-PROYINF
+2026-06-28 20:59:40,349 INFO o.a.j.JMeter: IP: 192.168.56.1 Name: Martin FullName: Martin
+2026-06-28 20:59:40,365 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\Users\mfons\GRUPO04-2026-PROYINF\loadtests\results\TP-02-report'
+2026-06-28 20:59:40,370 INFO o.a.j.s.FileServer: Default base='C:\Users\mfons\GRUPO04-2026-PROYINF'
+2026-06-28 20:59:40,370 INFO o.a.j.s.FileServer: Set new base='C:\Users\mfons\GRUPO04-2026-PROYINF\loadtests'
+2026-06-28 20:59:40,625 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-06-28 20:59:40,665 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-06-28 20:59:40,667 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-06-28 20:59:40,667 INFO o.a.j.s.SaveService: Loading file: C:\Users\mfons\GRUPO04-2026-PROYINF\loadtests\TP-02-crear-usuarios.jmx
+2026-06-28 20:59:40,750 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-06-28 20:59:40,750 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-06-28 20:59:40,750 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-06-28 20:59:40,750 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-06-28 20:59:40,750 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-06-28 20:59:40,750 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-06-28 20:59:40,790 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-06-28 20:59:40,794 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-06-28 20:59:40,794 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: C:\Users\mfons\GRUPO04-2026-PROYINF\loadtests\results\TP-02-results.jtl
+2026-06-28 20:59:40,794 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: C:\Users\mfons\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\reportgenerator.properties
+2026-06-28 20:59:40,797 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-06-28 20:59:40,803 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-06-28 20:59:40,803 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-06-28 20:59:40,803 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-06-28 20:59:40,803 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-06-28 20:59:40,803 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-06-28 20:59:40,803 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-06-28 20:59:40,803 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-06-28 20:59:40,803 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-06-28 20:59:40,803 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-06-28 20:59:40,814 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-06-28 20:59:40,815 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-06-28 20:59:40,815 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-06-28 20:59:40,815 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-06-28 20:59:40,816 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-06-28 20:59:40,816 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-06-28 20:59:40,816 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-06-28 20:59:40,817 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-06-28 20:59:40,818 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-06-28 20:59:40,818 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-06-28 20:59:40,818 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-06-28 20:59:40,818 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-06-28 20:59:40,818 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-06-28 20:59:40,821 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-06-28 20:59:40,821 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-06-28 20:59:40,821 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-06-28 20:59:40,848 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-06-28 20:59:40,850 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-06-28 20:59:40,850 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-06-28 20:59:40,856 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-06-28 20:59:40,856 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-06-28 20:59:40,963 INFO o.a.j.JMeter: Running test (1782694780957)
+2026-06-28 20:59:40,988 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 50 usuarios concurrentes - 30s
+2026-06-28 20:59:40,988 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group 50 usuarios concurrentes - 30s.
+2026-06-28 20:59:40,988 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-06-28 20:59:40,988 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=50 ramp-up=5 delayedStart=false
+2026-06-28 20:59:41,008 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-1
+2026-06-28 20:59:41,026 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-06-28 20:59:41,026 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-06-28 20:59:41,039 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = Martin
+2026-06-28 20:59:41,047 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-06-28 20:59:41,050 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-06-28 20:59:41,050 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-06-28 20:59:41,050 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-06-28 20:59:41,050 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-06-28 20:59:41,109 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-2
+2026-06-28 20:59:41,209 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-3
+2026-06-28 20:59:41,303 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-4
+2026-06-28 20:59:41,403 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-5
+2026-06-28 20:59:41,502 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-6
+2026-06-28 20:59:41,601 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-7
+2026-06-28 20:59:41,700 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-8
+2026-06-28 20:59:41,800 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-9
+2026-06-28 20:59:41,899 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-10
+2026-06-28 20:59:41,998 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-11
+2026-06-28 20:59:42,096 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-12
+2026-06-28 20:59:42,196 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-13
+2026-06-28 20:59:42,295 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-14
+2026-06-28 20:59:42,396 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-15
+2026-06-28 20:59:42,497 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-16
+2026-06-28 20:59:42,597 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-17
+2026-06-28 20:59:42,695 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-18
+2026-06-28 20:59:42,793 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-19
+2026-06-28 20:59:42,894 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-20
+2026-06-28 20:59:42,994 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-21
+2026-06-28 20:59:43,093 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-22
+2026-06-28 20:59:43,191 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-23
+2026-06-28 20:59:43,290 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-24
+2026-06-28 20:59:43,389 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-25
+2026-06-28 20:59:43,490 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-26
+2026-06-28 20:59:43,590 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-27
+2026-06-28 20:59:43,690 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-28
+2026-06-28 20:59:43,790 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-29
+2026-06-28 20:59:43,889 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-30
+2026-06-28 20:59:43,991 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-31
+2026-06-28 20:59:44,091 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-32
+2026-06-28 20:59:44,191 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-33
+2026-06-28 20:59:44,291 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-34
+2026-06-28 20:59:44,391 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-35
+2026-06-28 20:59:44,490 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-36
+2026-06-28 20:59:44,589 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-37
+2026-06-28 20:59:44,689 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-38
+2026-06-28 20:59:44,790 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-39
+2026-06-28 20:59:44,891 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-40
+2026-06-28 20:59:44,989 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-41
+2026-06-28 20:59:45,089 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-42
+2026-06-28 20:59:45,189 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-43
+2026-06-28 20:59:45,289 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-44
+2026-06-28 20:59:45,390 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-45
+2026-06-28 20:59:45,489 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-46
+2026-06-28 20:59:45,590 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-47
+2026-06-28 20:59:45,689 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-48
+2026-06-28 20:59:45,789 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-49
+2026-06-28 20:59:45,890 INFO o.a.j.t.JMeterThread: Thread started: 50 usuarios concurrentes - 30s 1-50
+2026-06-28 21:00:00,009 INFO o.a.j.r.Summariser: summary +   8783 in 00:00:19 =  461.1/s Avg:    93 Min:     8 Max:   261 Err:     0 (0.00%) Active: 50 Started: 50 Finished: 0
+2026-06-28 21:00:10,989 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-1
+2026-06-28 21:00:10,989 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-1
+2026-06-28 21:00:10,996 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-4
+2026-06-28 21:00:10,997 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-4
+2026-06-28 21:00:11,004 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-12
+2026-06-28 21:00:11,004 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-12
+2026-06-28 21:00:11,016 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-5
+2026-06-28 21:00:11,017 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-5
+2026-06-28 21:00:11,018 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-18
+2026-06-28 21:00:11,018 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-18
+2026-06-28 21:00:11,020 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-3
+2026-06-28 21:00:11,020 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-3
+2026-06-28 21:00:11,022 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-30
+2026-06-28 21:00:11,023 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-30
+2026-06-28 21:00:11,025 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-7
+2026-06-28 21:00:11,025 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-7
+2026-06-28 21:00:11,026 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-50
+2026-06-28 21:00:11,026 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-50
+2026-06-28 21:00:11,028 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-26
+2026-06-28 21:00:11,028 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-26
+2026-06-28 21:00:11,029 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-31
+2026-06-28 21:00:11,029 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-31
+2026-06-28 21:00:11,030 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-32
+2026-06-28 21:00:11,030 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-32
+2026-06-28 21:00:11,031 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-6
+2026-06-28 21:00:11,033 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-6
+2026-06-28 21:00:11,034 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-24
+2026-06-28 21:00:11,034 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-24
+2026-06-28 21:00:11,035 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-33
+2026-06-28 21:00:11,036 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-33
+2026-06-28 21:00:11,039 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-29
+2026-06-28 21:00:11,039 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-29
+2026-06-28 21:00:11,040 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-9
+2026-06-28 21:00:11,040 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-9
+2026-06-28 21:00:11,041 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-2
+2026-06-28 21:00:11,041 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-2
+2026-06-28 21:00:11,042 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-21
+2026-06-28 21:00:11,042 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-21
+2026-06-28 21:00:11,044 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-20
+2026-06-28 21:00:11,044 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-20
+2026-06-28 21:00:11,046 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-11
+2026-06-28 21:00:11,046 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-11
+2026-06-28 21:00:11,047 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-39
+2026-06-28 21:00:11,047 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-39
+2026-06-28 21:00:11,049 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-45
+2026-06-28 21:00:11,050 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-45
+2026-06-28 21:00:11,052 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-15
+2026-06-28 21:00:11,052 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-15
+2026-06-28 21:00:11,057 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-13
+2026-06-28 21:00:11,057 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-13
+2026-06-28 21:00:11,058 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-49
+2026-06-28 21:00:11,058 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-49
+2026-06-28 21:00:11,059 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-16
+2026-06-28 21:00:11,059 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-16
+2026-06-28 21:00:11,060 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-17
+2026-06-28 21:00:11,061 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-17
+2026-06-28 21:00:11,062 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-42
+2026-06-28 21:00:11,062 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-42
+2026-06-28 21:00:11,063 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-23
+2026-06-28 21:00:11,063 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-23
+2026-06-28 21:00:11,066 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-10
+2026-06-28 21:00:11,066 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-10
+2026-06-28 21:00:11,069 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-46
+2026-06-28 21:00:11,069 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-46
+2026-06-28 21:00:11,071 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-22
+2026-06-28 21:00:11,071 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-22
+2026-06-28 21:00:11,072 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-14
+2026-06-28 21:00:11,072 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-14
+2026-06-28 21:00:11,076 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-38
+2026-06-28 21:00:11,077 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-38
+2026-06-28 21:00:11,077 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-28
+2026-06-28 21:00:11,078 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-28
+2026-06-28 21:00:11,079 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-35
+2026-06-28 21:00:11,079 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-35
+2026-06-28 21:00:11,081 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-36
+2026-06-28 21:00:11,082 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-36
+2026-06-28 21:00:11,083 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-19
+2026-06-28 21:00:11,084 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-19
+2026-06-28 21:00:11,086 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-8
+2026-06-28 21:00:11,086 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-8
+2026-06-28 21:00:11,087 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-40
+2026-06-28 21:00:11,087 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-40
+2026-06-28 21:00:11,091 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-34
+2026-06-28 21:00:11,091 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-34
+2026-06-28 21:00:11,092 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-41
+2026-06-28 21:00:11,092 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-41
+2026-06-28 21:00:11,094 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-27
+2026-06-28 21:00:11,094 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-27
+2026-06-28 21:00:11,095 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-47
+2026-06-28 21:00:11,095 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-47
+2026-06-28 21:00:11,096 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-43
+2026-06-28 21:00:11,096 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-43
+2026-06-28 21:00:11,098 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-37
+2026-06-28 21:00:11,098 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-37
+2026-06-28 21:00:11,100 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-44
+2026-06-28 21:00:11,101 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-44
+2026-06-28 21:00:11,102 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-25
+2026-06-28 21:00:11,102 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-25
+2026-06-28 21:00:11,105 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 50 usuarios concurrentes - 30s 1-48
+2026-06-28 21:00:11,106 INFO o.a.j.t.JMeterThread: Thread finished: 50 usuarios concurrentes - 30s 1-48
+2026-06-28 21:00:11,106 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-06-28 21:00:11,109 INFO o.a.j.r.Summariser: summary +   6175 in 00:00:11 =  556.1/s Avg:    89 Min:    61 Max:   402 Err:     0 (0.00%) Active: 0 Started: 50 Finished: 50
+2026-06-28 21:00:11,109 INFO o.a.j.r.Summariser: summary =  14958 in 00:00:30 =  496.1/s Avg:    92 Min:     8 Max:   402 Err:     0 (0.00%)
+2026-06-28 21:00:11,110 INFO o.a.j.JMeter: Generating Dashboard
+2026-06-28 21:00:11,110 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-06-28 21:00:11,130 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-06-28 21:00:12,334 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-06-28 21:00:12,334 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-06-28 21:00:12,334 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-06-28 21:00:12,334 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-06-28 21:00:12,355 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-06-28 21:00:12,355 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-06-28 21:00:12,355 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-06-28 21:00:12,355 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-06-28 21:00:12,691 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-06-28 21:00:12,691 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-06-28 21:00:12,691 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-06-28 21:00:12,691 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-06-28 21:00:12,916 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-06-28 21:00:12,916 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 209412 samples
+2026-06-28 21:00:12,916 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-06-28 21:00:12,916 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-06-28 21:00:12,916 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-06-28 21:00:12,916 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-06-28 21:00:12,916 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-06-28 21:00:12,924 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-06-28 21:00:12,924 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-06-28 21:00:12,926 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-06-28 21:00:12,926 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-06-28 21:00:12,926 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-06-28 21:00:12,926 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 448740 samples
+2026-06-28 21:00:12,926 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 89748 samples
+2026-06-28 21:00:12,926 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 29916 samples
+2026-06-28 21:00:12,926 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 29916 samples produced in 1s 758 ms on channel 0
+2026-06-28 21:00:12,926 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-06-28 21:00:13,067 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-06-28 21:00:13,067 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-06-28 21:00:13,069 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-06-28 21:00:13,070 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-06-28 21:00:13,071 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to C:\Users\mfons\GRUPO04-2026-PROYINF\loadtests\results\TP-02-report\statistics.json
+2026-06-28 21:00:13,146 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-06-28 21:00:13,152 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: C:\Users\mfons\GRUPO04-2026-PROYINF\loadtests\results\TP-02-report
+2026-06-28 21:00:13,373 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: C:\Users\mfons\GRUPO04-2026-PROYINF\loadtests\results\TP-02-report, creating folder structure
+2026-06-28 21:00:13,384 INFO o.a.j.r.d.TemplateVisitor: Copying folder from 'C:\Users\mfons\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\report-template' to 'C:\Users\mfons\GRUPO04-2026-PROYINF\loadtests\results\TP-02-report', got message: C:\Users\mfons\GRUPO04-2026-PROYINF\loadtests\results\TP-02-report, found non empty folder with following content [C:\Users\mfons\GRUPO04-2026-PROYINF\loadtests\results\TP-02-report\statistics.json], will be ignored
+2026-06-28 21:00:15,371 INFO o.a.j.JMeter: Dashboard generated

@@ -1,0 +1,1 @@
+En general todos pasaron las pruebas bien, no hubo errores, la prueba que mas tardo fue la de login, lo cual es normal ya que tiene que comparar las credenciales, el de crear usuarios se ve que funciona bien ya que no hay problemas con la cantidad de inserciones en el poco tiempo

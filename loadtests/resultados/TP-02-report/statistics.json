@@ -1,0 +1,34 @@
+{
+  "POST /api/users" : {
+    "transaction" : "POST /api/users",
+    "sampleCount" : 29916,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 92.06872576547678,
+    "medianResTime" : 84.0,
+    "minResTime" : 8.0,
+    "maxResTime" : 402.0,
+    "pct1ResTime" : 120.0,
+    "pct2ResTime" : 133.0,
+    "pct3ResTime" : 170.0,
+    "throughput" : 998.3980776932318,
+    "receivedKBytesPerSec" : 442.67900125984517,
+    "sentKBytesPerSec" : 282.5277051211454
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 29916,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 92.06872576547678,
+    "medianResTime" : 84.0,
+    "minResTime" : 8.0,
+    "maxResTime" : 402.0,
+    "pct1ResTime" : 120.0,
+    "pct2ResTime" : 133.0,
+    "pct3ResTime" : 170.0,
+    "throughput" : 998.3980776932318,
+    "receivedKBytesPerSec" : 442.67900125984517,
+    "sentKBytesPerSec" : 282.5277051211454
+  }
+}
