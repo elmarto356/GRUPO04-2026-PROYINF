@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
-const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 10 * 1024 * 1024 } });
+const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 8000000 } });
 const Tesseract = require('tesseract.js');
 
 const formatos_permitidos = ['image/jpeg', 'image/png', 'application/pdf'];
